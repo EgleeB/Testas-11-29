@@ -25,3 +25,18 @@ header img {
 #menu-links a:nth-child(4) {
   color: rgb(236, 114, 134);
 }
+#section-about {
+  height: 400px;
+  background-color: rebeccapurple;
+  display: flex;
+}
+#right-about img {
+  float: right;
+  max-height: 100%;
+  width: 50%;
+}
+#left-about {
+  width: 50%;
+  float: left;
+  max-height: 100%;
+}
