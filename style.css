@@ -1,9 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --font-family-main: Arial, Helvetica, sans-serif;
+  --font-color: rgb(236, 114, 134);
 }
 header {
-  background-color: aqua;
+  /* background-color: aqua; */
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -20,23 +25,44 @@ header img {
 #menu-links a {
   text-decoration: none;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family-main);
 }
 #menu-links a:nth-child(4) {
-  color: rgb(236, 114, 134);
+  color: var(--font-color);
 }
 #section-about {
   height: 400px;
-  background-color: rebeccapurple;
+  background-color: rgb(194, 150, 238);
+  font-family: var(--font-family-main);
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2% 5%;
 }
-#right-about img {
-  float: right;
+#section-about img {
   max-height: 100%;
-  width: 50%;
 }
-#left-about {
+#about-info {
   width: 50%;
-  float: left;
-  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#about-info p {
+  font-size: 1rem;
+}
+#about-info p:nth-child(1) {
+  color: var(--font-color);
+}
+
+#about-info h1 {
+  font-size: 2rem;
+}
+button {
+  border-radius: 20px;
+  width: 100px;
+  background-color: white;
+  height: 30px;
+  border: 3px solid rgb(42, 82, 148);
+  color: black;
 }
