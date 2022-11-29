@@ -32,7 +32,7 @@ header img {
 }
 #section-about {
   height: 400px;
-  background-color: rgb(194, 150, 238);
+  /* background-color: rgb(194, 150, 238); */
   font-family: var(--font-family-main);
   display: flex;
   flex-direction: row;
@@ -65,4 +65,29 @@ button {
   height: 30px;
   border: 3px solid rgb(42, 82, 148);
   color: black;
+}
+#section-second {
+  background-image: linear-gradient(
+    to right,
+    rgb(131, 218, 240),
+    rgb(43, 58, 121)
+  );
+  padding: 10% 5%;
+  display: flex;
+  flex-direction: column;
+}
+#section-second p:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 50%;
+}
+#section-images {
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+#section-images img {
+  height: 250px;
+  width: 200px;
 }
